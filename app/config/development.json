@@ -1,0 +1,5 @@
+{
+    "host": "http://localhost:3000",
+    "dbURI": "mongodb+srv://super:host@cluster0.jyeqz.mongodb.net/chatcat?retryWrites=true&w=majority",
+    "sessionSecret": "847d460becf80628ac97fd649984d0c730004ef097bab64b62d340a05b6fcd97421aa8d44144eecbd9f262d02c1d8905470a4905e2696705f74276842f039824"
+}
