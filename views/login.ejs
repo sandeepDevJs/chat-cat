@@ -7,6 +7,25 @@
 	<script src="/js/jquery-2.1.4.min.js"></script>
 </head>
 <body>
+	<script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '533358351258133',
+				xfbml: true,
+				version: 'v11.0'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) { return; }
+			js = d.createElement(s); js.id = id;
+			js.src = "https://connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
 	<div class="container">
 		<div class="titlePanel">
 			<h1>ChatCAT | Login</h1>
@@ -19,6 +38,8 @@
 			<a href="rooms.htm">
 				<img id="loginBtnImg" src="/img/twLoginBtn.png" alt="Sign-In with Twitter">
 			</a>
+		</div>
+		<!-- <div class="fb-like" data-share="true" data-width="450" data-show-faces="true"> -->
 		</div>
 	</div>
 </body>
